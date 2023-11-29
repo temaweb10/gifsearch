@@ -1,0 +1,26 @@
+.gradientPurpleBottom {
+  position: fixed;
+  bottom: 0;
+  left: 8%;
+  width: 25%;
+  height: 83%;
+  background: linear-gradient(rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0.1));
+  filter: blur(270px);
+  animation: spin 15s linear infinite;
+}
+.gradientBlueBottom {
+  position: fixed;
+  bottom: 3%;
+  left: 5%;
+  width: 24%;
+  height: 68%;
+  background: linear-gradient(#0db7ff, rgba(128, 0, 128, 0.1));
+  filter: blur(300px);
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

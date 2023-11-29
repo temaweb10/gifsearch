@@ -1,0 +1,14 @@
+.gifsGallery {
+  /*   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(
+    50px,
+    auto
+  ); /* Устанавливаем минимальную высоту и авто-расширение */
+  grid-gap: 10px; /* Расстояние между элементами */
+  margin: 0 auto;
+  /*   max-width: 90%; */
+}
