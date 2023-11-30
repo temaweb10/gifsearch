@@ -16,7 +16,15 @@ function Main() {
     setGifs(res.data.results);
     setIsLoading(true);
   };
-  const memoizedGifs = useMemo(() => gifs, [gifs]);
+
+  const handleButtonClick = () => {
+    getGifs();
+  };
+
+  const memoizedComponentX = useMemo(() => {
+    return <GifsList gifs={gifs} isLoading={isLoading} />;
+  }, [gifs]);
+
   return (
     <div
       className={
@@ -34,16 +42,16 @@ function Main() {
           value={query}
           placeholder="GIFs search"
         />
-        <button className={styles.searchButton} onClick={() => getGifs()}>
+        <button className={styles.searchButton} onClick={handleButtonClick}>
           <img
             src="https://img.icons8.com/?size=256&id=7695&format=png"
             alt=""
             width={"32px"}
+            className={styles.iconSearch}
           />
         </button>
       </div>
-
-      <GifsList gifs={memoizedGifs} isLoading={isLoading} />
+      {memoizedComponentX}
     </div>
   );
 }

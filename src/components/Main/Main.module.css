@@ -23,16 +23,22 @@
 .searchBlock {
   display: flex;
   justify-content: center;
+  margin-bottom: 26px;
 }
 
 .searchButton {
-  border: 0px;
+  border: 2px solid rgba(32, 32, 32, 0.8);
   outline: 0px;
   margin-left: 0px;
   max-height: 43px;
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 0px 16px 16px 0px;
   color: #fff;
   font-weight: 600;
-  background-color: #fff;
+  background-color: rgb(28, 28, 28);
   cursor: pointer;
+}
+
+.iconSearch {
+  filter: invert(100%) sepia(6%) saturate(340%) hue-rotate(255deg)
+    brightness(116%) contrast(100%);
 }

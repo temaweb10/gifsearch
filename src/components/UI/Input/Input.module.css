@@ -6,5 +6,11 @@
   border: 2px solid rgba(32, 32, 32, 1);
   border-radius: 16px 0px 0px 16px;
   max-height: 43px;
-  border: 1px solid rgba(32, 32, 32, 0.8);
+  border: 2px solid rgba(32, 32, 32, 0.8);
+  margin-right: 5px;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid rgba(32, 32, 32, 0.8);
 }

@@ -3,8 +3,10 @@ import styles from "../Gradients/Gradients.module.css";
 function Gradients() {
   return (
     <>
-      <div className={styles.gradientPurpleBottom}>f</div>
-      <div className={styles.gradientBlueBottom}>f</div>
+      <div className={styles.gradientPurpleBottom}></div>
+      <div className={styles.gradientBlueBottom}></div>
+      <div className={styles.gradientBlueTop}></div>
+      <div className={styles.gradientPurpleTop}></div>
     </>
   );
 }
